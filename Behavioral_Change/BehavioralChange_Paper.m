@@ -66,7 +66,7 @@ for id = 1:size(M,1)
     mu      = 0.018;       % mortality rate for disease before Sanitary Emergency Measures
 
     %% Basic reproductive number
-    R0  = sqrt(((rho_i*beta_ia/eta) + ((1 - rho_i)*beta_is/eta_s))*s);
+    R0  = ((rho_i*beta_ia/eta) + ((1 - rho_i)*beta_is/eta_s))*s;
 
     %%
     tim = 0;    % February 17th
